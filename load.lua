@@ -1,6 +1,6 @@
 local genv = getgenv and getgenv()
-if not genv then return end
-
+if not genv then return end  
+  
 if genv.luxy_execute_debounce and (tick() - genv.luxy_execute_debounce) <= 5 then 
     return 
 end
